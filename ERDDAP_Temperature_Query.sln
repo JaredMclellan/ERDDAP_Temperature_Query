@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ERDDAP_Temperature_Query", "ERDDAP_Temperature_Query.pyproj", "{DDCC7AD1-2C5E-4B37-BBAA-CE9E56972388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDCC7AD1-2C5E-4B37-BBAA-CE9E56972388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCC7AD1-2C5E-4B37-BBAA-CE9E56972388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7371FD7-8089-4C2E-9582-090F7BE52C6E}
+	EndGlobalSection
+EndGlobal
