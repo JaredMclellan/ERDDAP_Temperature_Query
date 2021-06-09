@@ -3,6 +3,10 @@ ERDDAP Sea Surface Temperature Reporter
 This project was made to get a collection of datasets from CKAN and ERDDAP and produce temperature reports based on the data.
 Specifications based on what was listed here: https://docs.google.com/document/d/1RL7t9oqxNvFqxMVjF4QAR9wbspt8uANcK3P-6AGE3To/edit
 
+IMPORTANT
+Dependencies for this program exist. Please run setup.bat to ensure they are installed
+
+
 Main.py
 The main class is reponsible for the flow of the program and uses the CKAN and ERDDAP modules to accomplish this task.
 It holds the important specification variables for running the script, so any minor changes to things like organization name, start date, end date, etc.

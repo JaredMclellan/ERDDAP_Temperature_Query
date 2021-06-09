@@ -39,15 +39,17 @@ if count>0:
     erddapUrls = CKAN.getResourceUrls(packages)
 
     # Create a file to write to based on the time of the request
-    fileName = "ERDDAP_SST_" + datetime.datetime.now().strftime("%Y%m%dT%H%M%S") + ".txt"
+    fileDir = "Reports/"
+    filePrefix = "SST_" + datetime.datetime.now().strftime("%Y%m%dT%H%M%S") + "_"
+    reportName = "Report.txt"
     try:
-        f = open(fileName, "x")
+        f = open(fileDir + filePrefix + reportName, "x")
         f.close()
     except:
-        print(fileName + " already exists")
+        print(reportName + " already exists")
 
     # Header for the file
-    f = open(fileName, "a")
+    f = open(fileDir + filePrefix + reportName, "a")
     f.write("Found " + str(count) + " matches for " + organization + " in CKAN:\n\n" )
     print("Found " + str(count) + " matches for " + organization + " in CKAN:\n\n")
 
@@ -70,6 +72,7 @@ if count>0:
         tempPlot.xaxis.set_major_formatter(mdates.DateFormatter("%m-%d"))
         tickGap = mdates.DayLocator(interval = 7)
         tempPlot.xaxis.set_major_locator(tickGap)
+        plt.savefig(fileDir + filePrefix + "Fig_" +  str(sstData.id) + ".png")
         plt.show()
         plt.close()
 

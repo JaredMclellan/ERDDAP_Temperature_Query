@@ -11,7 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>ERDDAP_Temperature_Query</Name>
     <RootNamespace>ERDDAP_Temperature_Query</RootNamespace>
-    <InterpreterId>MSBuild|ERDDAP_Temperature_Query|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|ERDDAP_env|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,16 +30,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Main.py" />
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="ERDDAP_Temperature_Query\">
-      <Id>ERDDAP_Temperature_Query</Id>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="A:\Documents\Python Environments\ERDDAP_env\">
+      <Id>ERDDAP_env</Id>
       <Version>3.7</Version>
-      <Description>ERDDAP_Temperature_Query (Python 3.7 (64-bit))</Description>
+      <Description>ERDDAP_env (Python 3.7 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
