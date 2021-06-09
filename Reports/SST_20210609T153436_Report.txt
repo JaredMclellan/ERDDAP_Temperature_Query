@@ -1,0 +1,29 @@
+Found 3 matches for cmar in CKAN:
+
+Dataset ID: cmar_fca0_698a_0716
+Dataset URL: https://cioosatlantic.ca/erddap/tabledap/cmar_fca0_698a_0716.html
+Start Time: 2021-01-01T00:00:00Z
+End Time: 2021-02-28T23:59:59Z
+SST Mean: 4.499522216913522°C
+SST Median: 5.0°C
+SST Maximum: 15°C
+SST Minimum: -6°C
+
+Dataset ID: cmar_c5a5_c41c_2090
+Dataset URL: https://cioosatlantic.ca/erddap/tabledap/cmar_c5a5_c41c_2090.html
+Start Time: 2021-01-01T00:00:00Z
+End Time: 2021-02-28T23:59:59Z
+SST Mean: 3.7480537862703467°C
+SST Median: 4.0°C
+SST Maximum: 15°C
+SST Minimum: -6°C
+
+Dataset ID: cmar_8f10_9c65_13cb
+Dataset URL: https://cioosatlantic.ca/erddap/tabledap/cmar_8f10_9c65_13cb.html
+Start Time: 2021-01-01T00:00:00Z
+End Time: 2021-02-28T23:59:59Z
+SST Mean: 9.39795918367347°C
+SST Median: 9.0°C
+SST Maximum: 20°C
+SST Minimum: 6°C
+
