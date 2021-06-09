@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ddcc7ad1-2c5e-4b37-bbaa-ce9e56972388</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ERDDAP_Temperature_Query.py</StartupFile>
+    <StartupFile>Main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="API_Caller.py">
+    <Compile Include="CKAN.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ERDDAP_Temperature_Query.py" />
+    <Compile Include="ERDDAP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
