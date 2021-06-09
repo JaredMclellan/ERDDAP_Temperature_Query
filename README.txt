@@ -4,7 +4,8 @@ This project was made to get a collection of datasets from CKAN and ERDDAP and p
 Specifications based on what was listed here: https://docs.google.com/document/d/1RL7t9oqxNvFqxMVjF4QAR9wbspt8uANcK3P-6AGE3To/edit
 
 IMPORTANT
-Dependencies for this program exist. Please run setup.bat to ensure they are installed
+Dependencies for this program exist. Please run setup.bat to ensure they are installed or install the packages in requirement.txt in another manner
+The build folder also contains a standalone executable if issues arise.
 
 
 Main.py
